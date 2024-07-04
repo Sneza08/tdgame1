@@ -14,6 +14,6 @@ public class Enemy extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        this.setLocation(12, 6);
     }
 }
