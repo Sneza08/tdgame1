@@ -14,6 +14,7 @@ public class Enemy extends Actor
      */
     public void act()
     {
+        // ova metoda pomera objekat za dva polja u odredjenom pravcu
         this.move(2);
         
     }
