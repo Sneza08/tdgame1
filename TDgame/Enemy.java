@@ -22,6 +22,10 @@ public class Enemy extends Actor
         this.nextMoveCounter=0;
         this.attack=attack;
     }
+    public int getAttack()
+    {
+        return attack;
+    }
     public void act()
     {
         // ova metoda pomera objekat za dva polja u odredjenom pravcu
