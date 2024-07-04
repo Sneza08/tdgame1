@@ -14,11 +14,13 @@ public class Enemy extends Actor
      */
     private int moveDelay;
     private int nextMoveCounter;
+    private int attack;
     
-    public Enemy(int moveDelay)
+    public Enemy(int moveDelay,int attack)
     {
         this.moveDelay=moveDelay;
         this.nextMoveCounter=0;
+        this.attack=attack;
     }
     public void act()
     {

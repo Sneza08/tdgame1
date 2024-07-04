@@ -12,11 +12,11 @@ public class Orb extends Actor
      * Act - do whatever the Orb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private int HP;
+    private int hp;
     
-    public Orb(int HP)
+    public Orb(int hp)
 {
-   this.HP=HP;
+   this.hp=hp;
 }
     public void act()
     {
