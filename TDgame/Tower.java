@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Tower here.
+ *  class Tower
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Snezana ) 
+ * @version (04.07.2024.)
  */
 public class Tower extends Actor
 {
