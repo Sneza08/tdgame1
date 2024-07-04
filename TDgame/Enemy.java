@@ -16,6 +16,10 @@ public class Enemy extends Actor
     {
         // ova metoda pomera objekat za dva polja u odredjenom pravcu
         this.move(2);
+        if (this.isAtEdge())
+        {
+            this.setRotation(this.getRotation()+180);
+        }
         
     }
 }
