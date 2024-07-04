@@ -35,22 +35,20 @@ public class Enemy extends Actor
         this.move(1);
         this.nextMoveCounter=0;
     }
-        if (this.isAtEdge())
+        if (this.isTouching(Orb.class))
         {
-            this.setRotation(this.getRotation()+180);
+            Arena arena =(Arena)this.getWorld();
+            Orb orb=(Orb)arena.getObjectsAt(this.getX(), this.getY(), Orb.class);
+            orb.hit(this);
         }
-        else
-        {
+        
         if (this.isTouching(Direction.class))
             {
                 Direction direction=(Direction)this.getOneIntersectingObject(Direction.class);
                 this.setRotation(direction.getRotation());
             }
-            if (this.isTouching(Orb.class))
-            {
-                this.setRotation(this.getRotation()-90);
-            }
-        }
+           
+        
         
     }
 }
