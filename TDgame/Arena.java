@@ -20,7 +20,7 @@ public class Arena extends World
         Enemy enemy1 = new Enemy(5);
         enemy1.setRotation(0);
         this.addObject(enemy1,0,5);
-        Direction dir1= new Direction(90);
+        Direction dir1= new Direction();
   
         this.addObject(dir1,10,5);
         Orb orb1= new Orb();

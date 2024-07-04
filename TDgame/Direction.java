@@ -12,6 +12,10 @@ public class Direction extends Actor
      * Act - do whatever the Direction wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Direction()
+    {
+        this(0);
+    }
     public Direction(int rotation)
     {
         this.setRotation(rotation);
