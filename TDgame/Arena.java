@@ -23,7 +23,7 @@ public class Arena extends World
         Direction dir1= new Direction();
   
         this.addObject(dir1,10,5);
-        Orb orb1= new Orb();
+        Orb orb1= new Orb(5);
         orb1.setRotation(0);
         this.addObject(orb1,10,10);
         
