@@ -12,6 +12,12 @@ public class Enemy extends Actor
      * Act - do whatever the Enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int moveDelay;
+    
+    public Enemy(int moveDelay)
+    {
+        this.moveDelay=moveDelay;
+    }
     public void act()
     {
         // ova metoda pomera objekat za dva polja u odredjenom pravcu
