@@ -24,7 +24,8 @@ public class Enemy extends Actor
         {
         if (this.isTouching(Direction.class))
             {
-                this.setRotation(this.getRotation()+90);
+                Direction direction=(Direction)this.getOneIntersectingObject(Direction.class);
+                this.setRotation(direction.getRotation());
             }
             if (this.isTouching(Orb.class))
             {
