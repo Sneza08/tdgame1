@@ -17,5 +17,16 @@ public class Arena extends World
     {    
         // Create a new world with 24x12 cells with a cell size of 50x50 pixels.
         super(24, 12, 50); 
+        Enemy enemy1 = new Enemy();
+        enemy1.setRotation(0);
+        this.addObject(enemy1,0,5);
+        Direction dir1= new Direction();
+        dir1.setRotation(90);
+        this.addObject(dir1,10,5);
+        Orb orb1= new Orb();
+        orb1.setRotation(0);
+        this.addObject(orb1,10,10);
+        
+        
     }
 }
