@@ -13,15 +13,22 @@ public class Enemy extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int moveDelay;
+    private int nextMoveCounter;
     
     public Enemy(int moveDelay)
     {
         this.moveDelay=moveDelay;
+        this.nextMoveCounter=0;
     }
     public void act()
     {
         // ova metoda pomera objekat za dva polja u odredjenom pravcu
+        this.nextMoveCounter++;
+        if (this.nextMoveCounter==this.moveDelay)
+        {
         this.move(1);
+        this.nextMoveCounter=0;
+    }
         if (this.isAtEdge())
         {
             this.setRotation(this.getRotation()+180);
