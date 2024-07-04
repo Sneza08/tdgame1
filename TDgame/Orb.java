@@ -20,7 +20,8 @@ public class Orb extends Actor
 }
 public void hit(Enemy e)
 {
-    
+    Arena arena =(Arena)this.getWorld();
+    arena.respawn(e);
 }
     public void act()
     {
