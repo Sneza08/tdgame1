@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Enemy here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Opis klase  Enemy .
+ * Ova klasa predstavlja protivnike.
+ * @author (Snezana) 
+ * @version (2.5  04.07.2024.)
  */
 public class Enemy extends Actor
 {
