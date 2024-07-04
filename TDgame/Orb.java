@@ -18,6 +18,10 @@ public class Orb extends Actor
 {
    this.hp=hp;
 }
+public void hit(Enemy e)
+{
+    
+}
     public void act()
     {
         // Add your action code here.
