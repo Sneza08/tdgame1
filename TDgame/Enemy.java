@@ -14,6 +14,7 @@ public class Enemy extends Actor
      */
     public void act()
     {
-        this.setLocation(12, 6);
+        this.move(2);
+        
     }
 }
